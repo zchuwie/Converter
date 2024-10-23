@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Decimal Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <main class="2xl:container flex justify-center items-center min-h-dvh w-auto">
+    <div class="relative flex justify-center items-center flex-col h-96 w-72 bg-pastel rounded-xl">
+      <h1 class="absolute top-0 font-bold text-3xl p-5"> Converter </h1>
+      <div class="">
+        <input type="text" class="bg-pastel outline-none border-b-black border-b-2 w-40 h-8 2xl:font text-center" id="value">
+        <button type="submit" class="border" id="enter"> Enter </button>
+      </div>
+      <div class="flex-col-reverse p-5">
+        <select name = "conversionFrom" id="conversionFrom" class="outline-none">
+          <option value="Decimal" selected> Decimal</option>
+          <option value="Binary">Binary</option>
+          <option value="Octal">Octal</option>
+          <option value="Hexadecimal">Hexadecimal</option>
+        </select>
+
+        <select name = "conversionTo" id="conversionTo" class="outline-none">
+          <option value="Decimal" selected> Decimal</option>
+          <option value="Binary">Binary</option>
+          <option value="Octal">Octal</option>
+          <option value="Hexadecimal">Hexadecimal</option>
+        </select>
+      </div>
+      <div id="output" class="absolute bottom-0 p-10 text-2xl text-center"></div>
+      <script src="index.js" type="module"></script>
+  </div>
+  
+  </main>
+</body>
+</html>
